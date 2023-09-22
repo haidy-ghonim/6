@@ -1,0 +1,80 @@
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      backgroundColor: Colors.yellow,
+      body: SafeArea(
+          //child: Column(
+          child: Row(
+        verticalDirection: VerticalDirection.up,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            width: 80.0,
+            height: 50.0,
+            //margin: EdgeInsets.all( 20),
+            //padding: EdgeInsets.all( 10),
+            color: Colors.pink,
+            child: Text(
+              'Mai',
+              style: TextStyle(
+                fontSize: 20,
+                fontStyle: FontStyle.normal,
+                letterSpacing: 1.2,
+                height: 1.4,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Container(
+            width: 80.0,
+            height: 50.0,
+            //margin: EdgeInsets.all( 20),
+            //padding: EdgeInsets.all( 10),
+            color: Colors.lightGreen,
+            child: Text(
+              'Haidy',
+              style: TextStyle(
+                fontSize: 20,
+                fontStyle: FontStyle.normal,
+                letterSpacing: 1.2,
+                height: 1.4,
+                fontWeight: FontWeight.bold,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Container(
+            width: 80.0,
+            height: 50.0,
+            //margin: EdgeInsets.all( 20),
+            //padding: EdgeInsets.all( 10),
+            color: Colors.blue,
+            child: Text('Aly', style: TextStyle(
+                fontSize: 20, fontStyle: FontStyle.normal, letterSpacing: 1.2,
+                height: 1.4, fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+        ],
+      )),
+    ));
+  }
+}
