@@ -1,0 +1,57 @@
+void main() {
+runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+const MyApp({super.key});
+
+@OverRide
+Widget build(BuildContext context) {
+return MaterialApp(
+home: Scaffold(
+backgroundColor: Colors.yellow ,
+body:SafeArea(
+child: Column(
+verticalDirection: VerticalDirection.up,
+mainAxisAlignment: MainAxisAlignment.start ,
+crossAxisAlignment:CrossAxisAlignment.end ,
+children: [
+Container(
+width:80.0,
+height:50.0,
+//margin: EdgeInsets.all( 20),
+//padding: EdgeInsets.all( 10),
+color:Colors.cyan,
+child: Text('Mai',style:TextStyle(fontSize: 20),),
+),
+SizedBox( height:10,
+),
+Container(
+width:80.0,
+height:50.0,
+//margin: EdgeInsets.all( 20),
+//padding: EdgeInsets.all( 10),
+color:Colors.orange ,
+child: Text( 'Haidy',style:TextStyle(fontSize: 20),),
+),
+SizedBox( height:10,
+),
+Container(
+width:80.0,
+height:50.0,
+//margin: EdgeInsets.all( 20),
+//padding: EdgeInsets.all( 10),
+color:Colors.blueGrey ,
+child: Text('Aly',style:TextStyle(fontSize: 20),),
+),
+SizedBox(height:10,
+),
+],
+)
+),
+)
+);
+}
+}
+///////////
+
